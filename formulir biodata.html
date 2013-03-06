@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<title>Formulir Biodata</title>
+</head>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function isi(){
+	var nama=document.getElementById('nama');
+	var jk=document.getElementById('jk');
+	var birth=document.getElementById('birth');
+	var agama=document.getElementById('agama');
+	var mail=document.getElementById('mail');
+	var address=document.getElementById('address');
+	var country=document.getElementById('country');
+	var hobby=document.getElementById('hobby');
+	var kampus=document.getElementById('kampus');
+	var darah=document.getElementById('darah');
+	var pendidikan=document.getElementById('pendidikan');
+	var quote=document.getElementById('quote');
+	
+	alert('Name= '+nama+' Sex= '+jk+' birth= '+birth+' Religion= '+agama);
+}
+</script>
+<style type="text/css">
+body{
+background-image:url(green-sparkles.jpg);
+background-color:#CCFF66;
+}
+table{
+text-align:left;
+	margin-left:50px;
+	margin-top:20px;
+}
+</style></head>
+
+<body>
+<div id="header"><img src="980x280-980x280 copy.jpg" width="980px" height="280px"/></div>
+
+<div id="isi">
+
+<div id="direction">
+<div id="menu"><br />
+<h3 align="left"><a href="index.html"> Home</a></h3>
+<h3 align="left"><a href="aboutme.html"> About Me</a></h3>
+<h3 align="left"><a href="poto.html"> Photo's</a></h3>
+<h3 align="left"><a href="formulir biodata.html"> Formulir Biodata</a></h3>
+</div>
+</div>
+<div id="text">
+<form  action="" name="bio" method="post" onSubmit="return is()">
+<table width="420" border="0">
+<tr>
+	<td>Name</td>
+	<td>:</td>
+	<td><input type="text" name="nama" id="nama" size="27" style="border-radius:5px;"/></td>
+</tr>
+<tr>
+	<td>Sex</td>
+	<td>:</td>
+	<td>
+	<input type="radio" name="jk" id="jk" />Laki-Laki
+	<input type="radio" name="jk" id="jk" />Perempuan
+	</td>
+</tr>
+<tr>
+<td>Birth</td>
+<td>:</td>
+<td><input type="text" id="birth" name="birth" size="27" style="border-radius:5px;"/></td>
+</tr>
+<tr>
+<td>Religion</td>
+<td>:</td>
+<td>
+<select name="agama" id="agama" style="border-radius:5px;">
+<option>Select Your Religion</option>
+<option>Islam</option>
+<option>Katolik</option>
+<option>Protestan</option>
+<option>Hindu</option>
+<option>Budha</option>
+<option>Etc</option>
+ </td>
+</tr>
+<tr>
+<td>Email</td>
+<td>:</td>
+<td><input type="text" id="mail" name="mail" size="27" style="border-radius:5px;"/></td>
+</tr>
+<tr>
+<td>Address</td>
+<td>:</td>
+<td><textarea id="address" name="address" cols="20" rows="5" style="border-radius:5px;"></textarea></td>
+</tr>
+<tr>
+<td>Country</td>
+<td>:</td>
+<td><input type="text" id="country" name="country" size="27" style="border-radius:5px;"/></td>
+</tr>
+<tr>
+<td>Hobby</td>
+<td>:</td>
+<td width="350">
+<input type="checkbox" id="hobby" name="hobby" />Shopping
+<input type="checkbox" id="hobby" name="hobby" />Game
+<input type="checkbox" id="hobby" name:"hobby" />Swimming
+<input type="checkbox" id="hobby" name="hobby" />Etc
+</td>
+</tr>
+<tr>
+<td>College</td>
+<td>:</td>
+<td><input type="text" id="kampus" name="kampus" size="27" style="border-radius:5px;"/></td>
+</tr>
+<tr>
+<td>Blood type</td>
+<td>:</td>
+<td>
+<input type="radio" id="darah" name="darah" />A
+<input type="radio" id="darah" name="darah" />AB
+<input type="radio" id="darah" name="darah" />B
+<input type="radio" id="darah" name="darah" />O
+</td>
+</tr>
+<tr>
+<td>Education History</td>
+<td>:</td>
+<td><textarea id="pendidikan" name="pendidikan" cols="20" rows="5" style="border-radius:5px;"></textarea></td>
+</tr>
+<tr>
+<td>Quote</td>
+<td>:</td>
+<td><textarea id="quote" name="quote" cols="20" rows="5" style="border-radius:5px;"></textarea></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<input type="submit" id="kirim" name="kirim" value="Kirim" />
+<input type="reset" id="reset" name="reset" value="Reset" />
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
